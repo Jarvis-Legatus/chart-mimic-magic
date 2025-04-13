@@ -28,7 +28,7 @@ const GanttChart: React.FC<GanttChartProps> = ({ tasks }) => {
             className="h-16 relative" 
           >
             <div 
-              className={`absolute h-10 rounded-full my-3 ${task.color}`}
+              className="absolute h-10 rounded-full my-3"
               style={{ 
                 left: `${((task.start - 1) / 7) * 100}%`, 
                 width: `${((task.end - task.start + 1) / 7) * 100}%`,

@@ -11,7 +11,7 @@ const TaskList: React.FC = () => {
           className="h-16 flex items-center justify-end"
         >
           <span className={`text-${task.textColor}`}>
-            Task 1
+            {task.name}
           </span>
         </div>
       ))}

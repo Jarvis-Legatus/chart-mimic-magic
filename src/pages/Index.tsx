@@ -2,7 +2,6 @@
 import GanttChart from "@/components/GanttChart";
 import WeekHeader from "@/components/WeekHeader";
 import TaskList from "@/components/TaskList";
-import TodayMarker from "@/components/TodayMarker";
 import { tasks } from "@/data/tasks";
 import { fasterTasks } from "@/data/fasterTasks";
 
@@ -19,7 +18,6 @@ const Index = () => {
         <div className="flex relative">
           <TaskList />
           <GanttChart tasks={tasks} />
-          <TodayMarker />
         </div>
         
         <h2 className="text-2xl font-bold mt-16 mb-6 text-center">Faster Timeline</h2>
@@ -31,7 +29,6 @@ const Index = () => {
         <div className="flex relative">
           <TaskList />
           <GanttChart tasks={fasterTasks} />
-          <TodayMarker />
         </div>
       </div>
     </div>

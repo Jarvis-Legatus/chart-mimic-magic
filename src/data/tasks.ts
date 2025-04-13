@@ -4,7 +4,7 @@ import { TaskData } from "@/types";
 export const tasks: TaskData[] = [
   {
     id: 1,
-    name: "Task 1",
+    name: "Task A",
     start: 1,
     end: 2,
     textColor: "yellow-500",
@@ -12,7 +12,7 @@ export const tasks: TaskData[] = [
   },
   {
     id: 2,
-    name: "Task 1",
+    name: "Task B",
     start: 2,
     end: 3,
     textColor: "purple-400",
@@ -20,7 +20,7 @@ export const tasks: TaskData[] = [
   },
   {
     id: 3,
-    name: "Task 1",
+    name: "Task C",
     start: 3,
     end: 4.5,
     textColor: "green-400",
@@ -28,7 +28,7 @@ export const tasks: TaskData[] = [
   },
   {
     id: 4,
-    name: "Task 1",
+    name: "Task D",
     start: 4,
     end: 6,
     textColor: "orange-400",
@@ -36,7 +36,7 @@ export const tasks: TaskData[] = [
   },
   {
     id: 5,
-    name: "Task 1",
+    name: "Task E",
     start: 6,
     end: 6.7,
     textColor: "blue-400",
@@ -44,9 +44,9 @@ export const tasks: TaskData[] = [
   },
   {
     id: 6,
-    name: "Task 1",
+    name: "Task F",
     start: 7,
-    end: 7.7,
+    end: 7,
     textColor: "orange-400",
     bgColor: "#FF9F7A"
   }

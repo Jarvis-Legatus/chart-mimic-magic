@@ -1,6 +1,10 @@
 
-import GanttChartCompare from "@/components/GanttChartCompare";
+import GanttChart from "@/components/GanttChart";
+import WeekHeader from "@/components/WeekHeader";
+import TaskList from "@/components/TaskList";
 import ThemeToggle from "@/components/ThemeToggle";
+import { tasks } from "@/data/tasks";
+import { fasterTasks } from "@/data/fasterTasks";
 import { useTheme } from "@/hooks/useTheme";
 
 const Index = () => {
@@ -17,12 +21,27 @@ const Index = () => {
           <ThemeToggle />
         </div>
         
-        <p className="text-center mb-8">
-          Compare project timelines before and after automation using the slider below.
-          Drag the divider to compare both timelines.
-        </p>
+        <h2 className="text-2xl font-bold mb-6 text-center">Original Timeline</h2>
+        <div className="flex">
+          <div className="w-[150px]"></div>
+          <WeekHeader />
+        </div>
         
-        <GanttChartCompare />
+        <div className="flex relative">
+          <TaskList isOriginal={true} />
+          <GanttChart tasks={tasks} />
+        </div>
+        
+        <h2 className="text-2xl font-bold mt-16 mb-6 text-center">Faster Timeline</h2>
+        <div className="flex">
+          <div className="w-[150px]"></div>
+          <WeekHeader />
+        </div>
+        
+        <div className="flex relative">
+          <TaskList isOriginal={false} />
+          <GanttChart tasks={fasterTasks} />
+        </div>
       </div>
     </div>
   );
